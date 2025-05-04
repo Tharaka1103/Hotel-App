@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { 
   Waves, 
   Menu, 
@@ -84,7 +84,7 @@ const Header = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <span className="font-bold text-xl tracking-tight">Rupa's Surf</span>
+              <span className="font-bold text-xl tracking-tight">Rupa&apos;s Surf</span>
               <Badge variant="outline" className="ml-2 text-xs bg-primary/10 text-primary">Resort</Badge>
             </motion.div>
           </Link>
@@ -156,7 +156,7 @@ const Header = () => {
                       <div className="relative h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center">
                         <Waves className="h-5 w-5 text-primary" />
                       </div>
-                      <span className="font-bold text-lg">Rupa's Surf</span>
+                      <span className="font-bold text-lg">Rupa&apos;s Surf</span>
                     </Link>
                     <SheetClose className="rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none">
                       <span className="sr-only">Close</span>

@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import {
   Waves,
   Anchor,
@@ -23,7 +23,6 @@ import {
   Bath,
   UtensilsCrossed,
   Dumbbell,
-  Utensils,
   Magnet,
   WavesIcon,
 } from "lucide-react";
@@ -34,7 +33,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MorphingText } from "@/components/magicui/morphing-text";
 
 export default function HomePage() {
-  const { scrollY } = useScroll();
   const heroRef = useRef<HTMLDivElement>(null);
   
   return (

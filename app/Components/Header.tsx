@@ -2,18 +2,15 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Waves, 
   Menu, 
-  X, 
   ChevronDown,
   Instagram,
   Facebook,
   Twitter,
   PhoneCall,
-  Mail
 } from 'lucide-react';
 import { ThemeSwitch } from './ThemeSwitch';
 import { Button } from '@/components/ui/button';
@@ -36,18 +33,9 @@ import {
 import { Badge } from '@/components/ui/badge';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [username, setUsername] = useState('');
   const [scrolled, setScrolled] = useState(false);
   
   useEffect(() => {
-    const adminToken = localStorage.getItem('adminToken');
-    if (adminToken) {
-      setIsLoggedIn(true);
-      const email = atob(adminToken).split(':')[0];
-      setUsername(email);
-    }
 
     const handleScroll = () => {
       if (window.scrollY > 20) {

@@ -162,7 +162,7 @@ const Footer = () => {
                 <Waves className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <span className="font-bold text-xl">Rupa's Surf</span>
+                <span className="font-bold text-xl">Rupa&apos;s Surf</span>
                 <Badge variant="outline" className="ml-2 text-xs bg-primary/10 text-primary">Resort</Badge>
               </div>
             </div>
@@ -227,7 +227,7 @@ const Footer = () => {
             </div>
             
             <div className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Rupa's Surf Resort. All rights reserved.
+              © {new Date().getFullYear()} Rupa&apos;s Surf Resort. All rights reserved.
             </div>
           </div>
         </div>

@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import {
   Waves,
@@ -16,9 +15,7 @@ import {
   Facebook,
   Twitter,
   Heart,
-  Menu,
   ChevronRight,
-  Calendar,
   Star,
   Users,
   Coffee,
@@ -31,15 +28,13 @@ import {
   WavesIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
 import { MorphingText } from "@/components/magicui/morphing-text";
 
 export default function HomePage() {
   const { scrollY } = useScroll();
-  const waveOpacity = useTransform(scrollY, [0, 300], [1, 0]);
   const heroRef = useRef<HTMLDivElement>(null);
   
   return (
@@ -84,7 +79,7 @@ export default function HomePage() {
             />            
             <p className="text-base sm:text-lg lg:text-xl text-white mt-8 sm:mt-12 lg:mt-16 mb-6 sm:mb-8 animate-fadeIn delay-300 px-4">
               Where azure waves meet golden shores, creating the perfect canvas for your surfing adventure.
-              Discover the harmony of luxury and nature at Rupa's Surf Resort.
+              Discover the harmony of luxury and nature at Rupa&apos;s Surf Resort.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-slideUp delay-500 px-4">
               <Button size="lg" className="w-full sm:w-auto text-base sm:text-lg">
@@ -143,7 +138,7 @@ export default function HomePage() {
         </Badge>
         <h1 className="text-4xl font-bold mb-4">Building <span className="text-primary">Memories</span> That Last Forever</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Established in 2010, Rupa's Surf Resort has been a sanctuary for surf enthusiasts and ocean lovers seeking a perfect blend of luxury and adventure.
+          Established in 2010, Rupa&apos;s Surf Resort has been a sanctuary for surf enthusiasts and ocean lovers seeking a perfect blend of luxury and adventure.
         </p>
       </div>
 
@@ -158,7 +153,7 @@ export default function HomePage() {
           <div className="relative h-[500px] rounded-xl overflow-hidden">
             <Image
               src="/about.jpg"
-              alt="Rupa's Surf Resort"
+              alt="Rupa&apos;s Surf Resort"
               fill
               className="object-cover"
             />
@@ -177,7 +172,7 @@ export default function HomePage() {
         >
           <h3 className="text-2xl font-bold mb-6">Where Luxury Meets the Ocean</h3>
           <p className="text-muted-foreground mb-6">
-            Nestled along the pristine coastline, Rupa's Surf Resort offers an exclusive escape where the rhythmic sounds of waves create the perfect backdrop for relaxation and adventure.
+            Nestled along the pristine coastline, Rupa&apos;s Surf Resort offers an exclusive escape where the rhythmic sounds of waves create the perfect backdrop for relaxation and adventure.
           </p>
           <p className="text-muted-foreground mb-6">
             Our commitment to sustainability ensures that the natural beauty of our surroundings is preserved for generations to come. We operate with eco-friendly practices while providing world-class amenities and services.
@@ -199,7 +194,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Personalized Experience</h4>
-                <p className="text-sm text-muted-foreground">Tailored services for each guest's preferences</p>
+                <p className="text-sm text-muted-foreground">Tailored services for each guest&apos;s preferences</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -653,7 +648,7 @@ export default function HomePage() {
       </Badge>
       <h1 className="text-4xl font-bold mb-4">Capturing <span className="text-primary">Ocean</span> Magic</h1>
       <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-        Explore the beauty of Rupa's Surf Resort through our curated gallery of captivating moments.
+        Explore the beauty of Rupa&apos;s Surf Resort through our curated gallery of captivating moments.
       </p>
     </motion.div>
     
@@ -721,7 +716,7 @@ export default function HomePage() {
       </Badge>
       <h1 className="text-4xl font-bold mb-4">Testimonials From <span className="text-primary">Paradise</span> Luxurious</h1>
       <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-        Discover why travelers choose Rupa's Surf Resort for their surfing getaways and beach vacations.
+        Discover why travelers choose Rupa&apos;s Surf Resort for their surfing getaways and beach vacations.
       </p>
     </motion.div>
     
@@ -732,7 +727,7 @@ export default function HomePage() {
           location: "Los Angeles, USA",
           avatar: "/404.png",
           rating: 5,
-          text: "The perfect blend of luxury and surf culture. The instructors helped me catch my first wave, and the oceanfront suite was absolutely stunning. Can't wait to return!"
+          text: "The perfect blend of luxury and surf culture. The instructors helped me catch my first wave, and the oceanfront suite was absolutely stunning. Can not wait to return!"
         },
         {
           name: "Marcus Torres",
@@ -746,7 +741,7 @@ export default function HomePage() {
           location: "Tokyo, Japan",
           avatar: "/404.png",
           rating: 5,
-          text: "I came for relaxation and found paradise. The spa treatments are incredible, and even though I didn't surf, watching the surfers from my balcony while sipping coffee was magical. The restaurants exceeded all expectations."
+          text: "I came for relaxation and found paradise. The spa treatments are incredible, and even though I did not surf, watching the surfers from my balcony while sipping coffee was magical. The restaurants exceeded all expectations."
         }
       ].map((testimonial, index) => (
         <motion.div 
@@ -807,7 +802,7 @@ export default function HomePage() {
       <Badge variant="outline" className="mb-4 bg-primary/10 text-primary px-4 py-1">
         Our Location
       </Badge>
-      <h1 className="text-4xl font-bold mb-4">Luxurious Destination: <span className="text-primary">Rupa's Surf</span></h1>
+      <h1 className="text-4xl font-bold mb-4">Luxurious Destination: <span className="text-primary">Rupa&apos;s Surf</span></h1>
       <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
         Conveniently located in a pristine coastal setting, with easy access to the best surf spots and local attractions.
       </p>
@@ -969,8 +964,8 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email Us</h4>
-                    <p className="text-muted-foreground">reservations@Rupa's Surf.com</p>
-                    <p className="text-muted-foreground">info@Rupa's Surf.com</p>
+                    <p className="text-muted-foreground">reservations@Rupa&apos;s Surf.com</p>
+                    <p className="text-muted-foreground">info@Rupa&apos;s Surf.com</p>
                   </div>
                 </div>
                 

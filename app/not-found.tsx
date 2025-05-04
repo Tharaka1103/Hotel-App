@@ -22,7 +22,7 @@ export default function NotFound() {
         </h1>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          Looks like the solar panel we're looking for is in the dark. Let's get you back to a brighter path.
+          Looks like the solar panel we&apos;re looking for is in the dark. Let&apos;s get you back to a brighter path.
         </p>
         
         <div className="space-y-4">

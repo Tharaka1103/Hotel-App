@@ -1,11 +1,5 @@
-import React from 'react'
-
-type Props = {}
-
-const page = (props: Props) => {
+export default function About ()  {
   return (
-    <div>about</div>
+    <div>About page</div>
   )
 }
-
-export default page

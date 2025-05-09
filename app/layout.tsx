@@ -3,12 +3,18 @@ import "./globals.css";
 import { ThemeProvider } from './Components/ThemeProvider'
 import Header from "./Components/Header";
 import Footer from './Components/Footer'
-import { Poppins } from 'next/font/google'
+import { Josefin_Slab, Berkshire_Swash } from 'next/font/google'
 
-const poppins = Poppins({
+const josefinSlab = Josefin_Slab({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
+  weight: ['700'],
+  variable: '--font-josefin-slab',
+})
+
+const berkshireSwash = Berkshire_Swash({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-berkshire-swash',
 })
 
 export const metadata: Metadata = {
@@ -22,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={poppins.className}>
-      <body>
+    <html lang="en" suppressHydrationWarning className={`${josefinSlab.variable} ${berkshireSwash.variable}`}>
+      <body className={`${josefinSlab.className} min-h-screen`}>
         <ThemeProvider>
           <Header />
           {children}

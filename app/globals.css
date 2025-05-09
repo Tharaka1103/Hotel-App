@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
-  height: 100%;
-  overflow: auto;
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
+h1 {
+  font-family: var(--font-berkshire-swash);
+}
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
   display: block;
@@ -41,7 +45,7 @@ html, body{
 
 @layer base {
   :root {
-    --background: #e4e4e4;
+    --background: #F1e1cc;
     --foreground: #0A0A0B;
     --card: #FFFFFF;
     --card-foreground: #0A0A0B;
@@ -49,7 +53,7 @@ html, body{
     --text-foreground: #1c1c1c;
     --popover: #FFFFFF;
     --popover-foreground: #0A0A0B;
-    --primary: #13b005;
+    --primary: #055db0;
     --primary-foreground: #FFF1F2;
     --secondary: #F4F4F5;
     --secondary-foreground: #18181B;
@@ -87,7 +91,7 @@ html, body{
     --text-foreground: #9e9e9e;
     --popover: #171717;
     --popover-foreground: #F2F2F2;
-    --primary: #0b8600;
+    --primary: #0871d3;
     --primary-foreground: #052E16;
     --secondary: #27272A;
     --secondary-foreground: #FAFAFA;

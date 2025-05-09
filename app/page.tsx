@@ -6,34 +6,17 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Waves,
-  Anchor,
-  Sun,
   Palmtree,
-  MapPin,
-  PhoneCall,
-  Mail,
   Instagram,
-  Facebook,
-  Twitter,
-  Heart,
   ChevronRight,
   Star,
   Users,
-  Coffee,
-  Wifi,
-  Bath,
-  UtensilsCrossed,
-  Dumbbell,
   Car,
-  Camera,
   Utensils,
-  ArrowUpRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MorphingText } from "@/components/magicui/morphing-text";
 
 export default function HomePage() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -92,12 +75,12 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
             >
               <Badge variant="outline" className="mb-4 border border-primary text-black bg-blue-200 px-4 py-1">
-                Welcome to Rupa's Surf Resort
+                Welcome to Rupa&apos;s Surf Resort
               </Badge>
               <h1 className="text-4xl font-bold mb-6">Your Beach Home <span className="text-primary">Away From Home</span></h1>
               <p className="text-lg mb-6">
                 Nestled on the pristine shores of Sri Lanka, our surf resort offers the perfect blend of adventure and relaxation. 
-                Whether you're catching your first wave or looking for the perfect break, our experienced team is here to make your
+                Whether you&apos;re catching your first wave or looking for the perfect break, our experienced team is here to make your
                 stay unforgettable.
               </p>
               <Button className="mt-4">
@@ -115,7 +98,7 @@ export default function HomePage() {
               <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/about.jpg"
-                  alt="Rupa's Surf Resort"
+                  alt="Rupas Surf Resort"
                   fill
                   className="object-cover"
                 />

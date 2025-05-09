@@ -23,13 +23,11 @@ import {
   SheetTrigger,
   SheetClose
 } from "@/components/ui/sheet";
-import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
-  const [showAlert, setShowAlert] = useState(true);
   const dropdownRefs = useRef<Array<HTMLDivElement | null>>([]);
   
   useEffect(() => {
@@ -181,7 +179,7 @@ const Header = () => {
                   <h1 className={cn(
                     "font-bold tracking-tight transition-all duration-300",
                     scrolled ? "text-lg" : "text-2xl"
-                  )}>Rupa's Surf</h1>
+                  )}>Rupa&apos;s Surf</h1>
                   <p className={cn(
                     "transition-all duration-300",
                     scrolled ? "text-[10px] -mt-0.5" : "text-xs"
@@ -274,7 +272,7 @@ const Header = () => {
                           <Waves className="h-5 w-5 text-primary" />
                         </div>
                         <div>
-                          <span className="font-bold text-lg">Rupa's Surf</span>
+                          <span className="font-bold text-lg">Rupa&apos;s Surf</span>
                           <p className="text-xs text-muted-foreground -mt-1">by Rupa</p>
                         </div>
                       </Link>
